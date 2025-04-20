@@ -17,6 +17,7 @@ builder.Services.AddHttpClient();
 builder.Services.AddSingleton<TelegramClient>();
 builder.Services.AddHostedService<TelegramStartupService>();
 builder.Services.AddLocalization();
+builder.WebHost.UseUrls("http://0.0.0.0:8080");
 
 var app = builder.Build();
 

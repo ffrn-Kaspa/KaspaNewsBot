@@ -3,9 +3,9 @@ services:
     build:
       context: .
       dockerfile: Telegram.DiscordBot/Dockerfile
-    image: discordbot:latest
+    image: bot/discordbot:latest
   telegramBot:
     build:
       context: .
       dockerfile: Telegram.TelegramBot/Dockerfile
-    image: telegrambot:latest
+    image: bot/telegrambot:latest
