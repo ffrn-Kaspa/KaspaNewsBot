@@ -14,7 +14,7 @@ builder.Services.AddHttpClient();
 builder.Services.AddHostedService<DiscordClient>();
 builder.Services.AddMemoryCache(options =>
 {
-    options.ExpirationScanFrequency = TimeSpan.FromSeconds(300);
+    options.ExpirationScanFrequency = TimeSpan.FromSeconds(10);
 });
 var app = builder.Build();
 
