@@ -25,3 +25,4 @@ jobs:
          cat <<EOT > Telegram.DiscordBot/appsettings.json
          ${{ secrets.APPSETTINGS_DISCORD }}
          EOT
+         docker-compose up --build -d
