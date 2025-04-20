@@ -1,0 +1,21 @@
+name: CI/CD with Docker Compose
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+
+    steps:
+      - name: Pull repo
+        uses: actions/checkout@v3
+
+      - name: Stop and remove current containers
+        run: |
+          docker-compose down || true
+
+      - name: Build and start containers
+        run: |
+          docker-compose up --build -d
