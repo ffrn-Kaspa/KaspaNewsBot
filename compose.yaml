@@ -1,0 +1,11 @@
+services:
+  discordBot:
+    build:
+      context: .
+      dockerfile: Telegram.DiscordBot/Dockerfile
+    image: discordbot:latest
+  telegramBot:
+    build:
+      context: .
+      dockerfile: Telegram.TelegramBot/Dockerfile
+    image: telegrambot:latest

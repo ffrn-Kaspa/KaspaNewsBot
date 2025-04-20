@@ -1,0 +1,16 @@
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Critical",
+      "Microsoft.AspNetCore": "Critical"
+    }
+  },
+  "AllowedHosts": "discordBot",
+  "Telegram": {
+    "Token": "your telegram bot token"
+  },
+  "ConnectionStrings":
+  {
+    "Telegram": "your connection string to postgres database"
+  }
+}

@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="NewTweet" xml:space="preserve">
+    <value> 嘿！有新的推文。
+作者：
+</value>
+  </data>
+  <data name="SourceText" xml:space="preserve">
+    <value> 你可以在这里找到原始推文：</value>
+  </data>
+  <data name="Quoted" xml:space="preserve">
+    <value>这是引用的帖子。
+来源帖子：</value>
+  </data>
+  <data name="Reply" xml:space="preserve">
+    <value>这是回复的帖子。
+来源帖子：</value>
+  </data>
+  <data name="Retweet" xml:space="preserve">
+    <value>这是转发的帖子。
+来源帖子：</value>
+  </data>
+  <data name="Join" xml:space="preserve">
+    <value>如果你想随时了解 Kaspa 的最新动态，
+别忘了加入频道或将机器人添加到你的频道中。</value>
+  </data>
+  <data name="StartContent" xml:space="preserve">
+    <value>欢迎，选择一个选项。</value>
+  </data>
+  <data name="HelpContent" xml:space="preserve">
+    <value>以下是所有指令：
+/start - 注册，设置语言，获取帮助。
+/help - 获取命令列表
+/language - 支持的语言。目前只有中文和英文支持。
+/enable -  启用推文语言。
+/disable - 禁用推文语言。
+/getEnabled - 获取推文语言列表
+/showTweeters - 获取推文列表
+/addTweeter - 添加推文列表
+/support - 支持信息
+/moveHere - 仅适用于超级组（论坛）-允许更改首选主题，机器人将在其中发布推文
+/moveHereSingle - 仅适用于超级组（论坛）-允许您更改所选区域的主题。如果您有不同的语言，并希望机器人在不同的主题中发布来自不同语言的推文，则很有用</value>
+  </data>
+  <data name="SetLanguageSuccess" xml:space="preserve">
+    <value>✅ 语言设置成功。</value>
+  </data>
+  <data name="SetLanguageContent" xml:space="preserve">
+    <value>选择这些语言中的一种。</value>
+  </data>
+  <data name="EnableContent" xml:space="preserve">
+    <value>每个按钮用于接收对应地区的推文，只点击你想接收推文的地区按钮即可。</value>
+  </data>
+  <data name="DisableContent" xml:space="preserve">
+    <value>每个按钮会停止接收该地区的推文。</value>
+  </data>
+  <data name="EnableContentSuccess" xml:space="preserve">
+    <value>该地区已成功启用。</value>
+  </data>
+  <data name="DisableContentSuccess" xml:space="preserve">
+    <value> 该地区已成功断开连接。</value>
+  </data>
+  <data name="GetEnabledRegionsContent" xml:space="preserve">
+    <value>以下是当前在此聊天中发布推文的所有地区：</value>
+  </data>
+  <data name="MoveHereSuccess" xml:space="preserve">
+    <value>所有注册地区的推文将发布在这里。</value>
+  </data>
+  <data name="MoveHereSingle" xml:space="preserve">
+    <value> 选择你想移动到这里的语言。</value>
+  </data>
+  <data name="MoveHereSingleSuccess" xml:space="preserve">
+    <value>选定地区的推文将发布在此话题中。</value>
+  </data>
+  <data name="ShowTweetersContent" xml:space="preserve">
+    <value> 这是你所在地区的所有推文者列表。</value>
+  </data>
+  <data name="NotAdmin" xml:space="preserve">
+    <value>你必须是管理员才能使用此机器人。</value>
+  </data>
+  <data name="LanguageChannel" xml:space="preserve">
+    <value>新闻频道</value>
+  </data>
+  <data name="Original" xml:space="preserve">
+    <value>原创</value>
+  </data>
+  <data name="Source" xml:space="preserve">
+    <value>原创</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>kaspa:qpde8kkdpwt0yvkds45g8sgt4tcl3q2j3n7quj572h5u5htfn7kxwxfx35xcy</value>
+  </data>
+  <data name="AddTweeterContent" xml:space="preserve">
+    <value> 添加用户的过程是手动的，只能由机器人所有者完成。
+请直接联系他，或填写此表单：
+https://forms.gle/xjZWvq5scqR8bire6</value>
+  </data>
+  <data name="SupportContent" xml:space="preserve">
+    <value>你好，这个机器人是由社区成员编写和维护的。为了让这个机器人得以运行，拥有者每月还需要自掏腰包支付使用 Twitter API 的费用。如果你认为这个机器人对你有价值，欢迎向以下地址捐款：</value>
+  </data>
+</root>

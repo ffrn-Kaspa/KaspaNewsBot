@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="NewTweet" xml:space="preserve">
+    <value>Hey!
+
+There's a new Tweet.
+Author: 
+</value>
+  </data>
+  <data name="SourceText" xml:space="preserve">
+    <value>You can find the source Tweet here:</value>
+  </data>
+  <data name="Quoted" xml:space="preserve">
+    <value>This is a Quoted post.
+Source Post:</value>
+  </data>
+  <data name="Reply" xml:space="preserve">
+    <value>This is a Reply post.
+Source Post:</value>
+  </data>
+  <data name="Retweet" xml:space="preserve">
+    <value>This is a Retweetd post.
+Source Post:</value>
+  </data>
+  <data name="Join" xml:space="preserve">
+    <value>If you want to stay updated in all things kaspa related don't forget to join or add the bot to your channel.
+</value>
+  </data>
+  <data name="StartContent" xml:space="preserve">
+    <value>Welcome, choose an option</value>
+  </data>
+  <data name="HelpContent" xml:space="preserve">
+    <value>Here is a list of all the commands:
+/start - Register Chat, Set Language and Get Help
+/help - Gives a list of available commands
+/language - Allows to set Chat language. Only Chinese and English are available right now.
+/enable - Allows you to choose which regions you want to receive tweets from
+/disable - If you decide you don't want tweets from a region anymore you can remove the region here
+/getEnabled - Prints a list of regions that are posting in this chat
+/showTweeters - Gives a list of tweeters for your regions
+/addTweeter - Instructions to add tweeters from other regions.
+/support - Info to support bot
+/moveHere - Only for supergroups (forums) - allows to change the preferred topic which the bot will post tweets in
+/moveHereSingle - Only for supergroups (forums) - Allows you to change the topic for selected regions. Useful if you have different languages and want the bot to post tweets from different languages in different topics</value>
+  </data>
+  <data name="SetLanguageContent" xml:space="preserve">
+    <value>Choose one of those Languages</value>
+  </data>
+  <data name="SetLanguageSuccess" xml:space="preserve">
+    <value>✅ Language set successfully</value>
+  </data>
+  <data name="EnableContent" xml:space="preserve">
+    <value>Each button allows you to receive tweets from the relative region, only click the button from the regions you want to receive tweets from.</value>
+  </data>
+  <data name="DisableContent" xml:space="preserve">
+    <value>Each button stops pushing tweets from its relative region</value>
+  </data>
+  <data name="EnableContentSuccess" xml:space="preserve">
+    <value>Region has been enabled successfully</value>
+  </data>
+  <data name="DisableContentSuccess" xml:space="preserve">
+    <value>Region has been disconnected successfully</value>
+  </data>
+  <data name="GetEnabledRegionsContent" xml:space="preserve">
+    <value>Here is a list of all the regions that are posting tweets in this chat:</value>
+  </data>
+  <data name="MoveHereSuccess" xml:space="preserve">
+    <value>Tweets from all registered regions will be posted here</value>
+  </data>
+  <data name="MoveHereSingle" xml:space="preserve">
+    <value>Select the languages you want to move here</value>
+  </data>
+  <data name="MoveHereSingleSuccess" xml:space="preserve">
+    <value>Tweets from selected region will be posted in this topic</value>
+  </data>
+  <data name="ShowTweetersContent" xml:space="preserve">
+    <value>Here is a list of all the tweeters for your regions</value>
+  </data>
+  <data name="NotAdmin" xml:space="preserve">
+    <value>You must be an admin to use this bot</value>
+  </data>
+  <data name="ChannelLink" xml:space="preserve">
+    <value>https://t.me/Kaspa_News_Channel</value>
+  </data>
+  <data name="Original" xml:space="preserve">
+    <value>Source</value>
+  </data>
+  <data name="Source" xml:space="preserve">
+    <value>Source</value>
+  </data>
+  <data name="LanguageChannel" xml:space="preserve">
+    <value>News Channel</value>
+  </data>
+  <data name="AddTweeterContent" xml:space="preserve">
+    <value>The process to add a user is manual and can only be done by the bot owner. 
+Contact him directly or fill in this form:
+https://forms.gle/xjZWvq5scqR8bire6
+</value>
+  </data>
+  <data name="SupportContent" xml:space="preserve">
+    <value>Hello, this bot is written and mantained by a community member.
+To make this bot possible the owner is also paying out of pocket monthly feet to use twitter APIs.
+If you think this bot is valuable to you feel free to donate to the following address:
+</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>kaspa:qpde8kkdpwt0yvkds45g8sgt4tcl3q2j3n7quj572h5u5htfn7kxwxfx35xcy</value>
+  </data>
+</root>

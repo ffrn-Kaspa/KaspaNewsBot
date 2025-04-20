@@ -1,0 +1,12 @@
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Critical",
+      "Microsoft.AspNetCore": "Critical"
+    }
+  },
+  "Discord": {
+    "Token": "your discord bot token",
+    "PostUrl": "http://telegramBot:8080/new"
+  }
+}
