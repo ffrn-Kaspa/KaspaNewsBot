@@ -18,10 +18,10 @@ jobs:
 
       - name: Build and start containers
         run: |
-          cat <<EOT > src/Telegram.TelegramBot/appsettings.json
+          printf <<EOT > src/Telegram.TelegramBot/appsettings.json
           ${{ secrets.AAPPSETTINGS_TELEGRAM }}
           EOT
-          cat <<EOT > src/Telegram.DiscordBot/appsettings.json
+          printf <<EOT > src/Telegram.DiscordBot/appsettings.json
           ${{ secrets.APPSETTINGS_DISCORD }}
           EOT
           
