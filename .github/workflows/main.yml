@@ -18,5 +18,6 @@ jobs:
 
       - name: Build and start containers
         run: |
+          pwd
           echo "${{ secrets.AAPPSETTINGS_TELEGRAM }}" > src/Telegram.TelegramBot/appsettings.json
           echo "${{ secrets.APPSETTINGS_DISCORD }}" > src/Telegram.DiscordBot/appsettings.json
