@@ -75,7 +75,7 @@ public class TelegramClient
         }
         
         
-        switch (msg.Text!.Split('@')[0])
+        switch (msg.Text is not null? msg.Text.Split('@')[0] : "")
         {
             case "/start":
                 if(!await Protect(msg, culture)){return;}
