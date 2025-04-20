@@ -8,4 +8,6 @@ services:
     build:
       context: .
       dockerfile: Telegram.TelegramBot/Dockerfile
+    ports:
+      - 8080:8080
     image: bot/telegrambot:latest
