@@ -69,15 +69,15 @@ Author: </value>
   </data>
   <data name="Quoted" xml:space="preserve">
     <value>This is a Quoted post.
-Source Post:</value>
+Quoted Post:</value>
   </data>
   <data name="Reply" xml:space="preserve">
     <value>This is a Reply post.
-Source Post:</value>
+Replied Post:</value>
   </data>
   <data name="Retweet" xml:space="preserve">
     <value>This is a Retweetd post.
-Source Post:</value>
+Retweeted Post:</value>
   </data>
   <data name="Join" xml:space="preserve">
     <value>If you want to stay updated in all things kaspa related don't forget to join or add the bot to your channel.

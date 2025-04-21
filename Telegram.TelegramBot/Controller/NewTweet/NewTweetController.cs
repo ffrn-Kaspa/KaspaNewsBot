@@ -49,43 +49,43 @@ public class NewTweetController : ControllerBase
             {
                 sb.Append(GetString(Languages.Tweet.Quoted));
                 sb.Append(" ");
-                sb.Append($"<a href=\"{request.Source}\">{GetString(Languages.Tweet.Original)}</a>");
+                sb.Append($"<a href=\"{request.Source}\">{GetString(Languages.Tweet.Source)}</a>");
                 sb.Append("\n\n");
                 sb.Append(GetString(Languages.Tweet.SourceText));
                 sb.Append(" ");
-                sb.Append($"<a href=\"{request.Quoted}\">{GetString(Languages.Tweet.Source)}</a>");
+                sb.Append($"<a href=\"{request.Quoted}\">{GetString(Languages.Tweet.Original)}</a>");
             }
             else if (request.Retweeted is not null)
             {
                 sb.Append(GetString(Languages.Tweet.Retweet));
                 sb.Append(" ");
                 
-                sb.Append($"<a href=\"{request.Source}\">{GetString(Languages.Tweet.Original)}</a>");
+                sb.Append($"<a href=\"{request.Source}\">{GetString(Languages.Tweet.Source)}</a>");
                 sb.Append("\n\n");
                 sb.Append(GetString(Languages.Tweet.SourceText));
                 sb.Append(" ");
-                sb.Append($"<a href=\"{request.Retweeted}\">{GetString(Languages.Tweet.Source)}</a>");
+                sb.Append($"<a href=\"{request.Retweeted}\">{GetString(Languages.Tweet.Original)}</a>");
             }
             else if (request.Replying is not null)
             {
                 sb.Append(GetString(Languages.Tweet.Reply));
                 sb.Append(" ");
-                sb.Append($"<a href=\"{request.Source}\">{GetString(Languages.Tweet.Original)}</a>");
+                sb.Append($"<a href=\"{request.Source}\">{GetString(Languages.Tweet.Source)}</a>");
                 sb.Append("\n");
                 sb.Append(GetString(Languages.Tweet.SourceText));
                 sb.Append(" ");
-                sb.Append($"<a href=\"{request.Replying}\">{GetString(Languages.Tweet.Source)}</a>");
+                sb.Append($"<a href=\"{request.Replying}\">{GetString(Languages.Tweet.Original)}</a>");
             }
         }
         else
         {
             sb.Append(Languages.Tweet.SourceText);
             sb.Append(" ");
-            sb.Append($"<a href=\"{request.Source}\">{Languages.Tweet.Source}</a>");
+            sb.Append($"<a href=\"{request.Source}\">{Languages.Tweet.Original}</a>");
         }
         sb.Append("\n\n");
         sb.Append(GetString(Languages.Tweet.Join));
-        sb.Append(" ");
+        sb.Append("\n");
         sb.Append($"<a href=\"{GetString(Languages.Tweet.ChannelLink)}\">{GetString(Languages.Tweet.LanguageChannel)}</a>");
         
        //get chats 
