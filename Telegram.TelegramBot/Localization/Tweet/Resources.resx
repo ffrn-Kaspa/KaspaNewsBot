@@ -62,11 +62,10 @@
     <value>Hey!
 
 There's a new Tweet.
-Author: 
-</value>
+Author: </value>
   </data>
   <data name="SourceText" xml:space="preserve">
-    <value>You can find the source Tweet here:</value>
+    <value>You can find the Tweet here:</value>
   </data>
   <data name="Quoted" xml:space="preserve">
     <value>This is a Quoted post.
@@ -141,7 +140,7 @@ Source Post:</value>
     <value>https://t.me/Kaspa_News_Channel</value>
   </data>
   <data name="Original" xml:space="preserve">
-    <value>Source</value>
+    <value>Tweet</value>
   </data>
   <data name="Source" xml:space="preserve">
     <value>Source</value>

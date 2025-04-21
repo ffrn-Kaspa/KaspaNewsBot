@@ -60,11 +60,10 @@
   </resheader>
   <data name="NewTweet" xml:space="preserve">
     <value> 嘿！有新的推文。
-作者：
-</value>
+作者：</value>
   </data>
   <data name="SourceText" xml:space="preserve">
-    <value> 你可以在这里找到原始推文：</value>
+    <value>你可以在这里找到这条推文：</value>
   </data>
   <data name="Quoted" xml:space="preserve">
     <value>这是引用的帖子。
@@ -139,7 +138,7 @@
     <value>新闻频道</value>
   </data>
   <data name="Original" xml:space="preserve">
-    <value>原创</value>
+    <value>推文</value>
   </data>
   <data name="Source" xml:space="preserve">
     <value>原创</value>

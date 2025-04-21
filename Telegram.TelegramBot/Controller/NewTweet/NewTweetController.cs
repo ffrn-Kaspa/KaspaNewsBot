@@ -40,6 +40,7 @@ public class NewTweetController : ControllerBase
         var sb = new StringBuilder(header);
         sb.Append($"<a href=\"{request.User}\">{request.Username}</a>");
         sb.Append("\n");
+        sb.Append("\n");
         sb.Append(request.Message);
         sb.Append("\n\n");
         if (request.IsReply)
