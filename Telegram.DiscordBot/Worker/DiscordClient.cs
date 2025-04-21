@@ -175,11 +175,16 @@ public class DiscordClient :BackgroundService
                 .Where(x => !x.Contains("[Retweeted]("))
                 .Where(x => !x.Contains("[Replying]("))
                 .Where(x => !x.Contains(tweet));
-            
             var textContent = string.Join("\n", cleaned);
+            if (string.IsNullOrEmpty(user))
+            {
+                Match userMatch = Regex.Match(tweet, UserPattern);
+                user = String.IsNullOrWhiteSpace(userMatch.Groups[1].Value) ? "Not Found" : userMatch.Groups[1].Value;
+                
+            }
             var usernamestringMatch = Regex.Match(user, UserNamePattern);
-            
             var username = String.IsNullOrWhiteSpace(usernamestringMatch.Groups[1].Value) ? "Not Found" : usernamestringMatch.Groups[1].Value;
+          
             
             var regex = new Regex(@"<(?<url>https?://[^>]+)>", RegexOptions.Compiled);
 

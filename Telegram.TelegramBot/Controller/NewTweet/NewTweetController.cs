@@ -96,16 +96,33 @@ public class NewTweetController : ControllerBase
 
        await Parallel.ForEachAsync(chats,cancellationToken, async (x, stoppingTokenToken) =>
        {
-           await _client.Bot.SendMessage(
-               chatId: x.Chat.ChatIdentificationNumber,
-               text: sb.ToString(),
-               messageThreadId: x.TopicId?? null,
-               parseMode: Telegram.Bot.Types.Enums.ParseMode.Html,
-               linkPreviewOptions: new LinkPreviewOptions()
+           try
+           {
+               
+               const int maxLength = 4096;
+               var fullMessage = sb.ToString();
+
+               for (int i = 0; i < fullMessage.Length; i += maxLength)
                {
-                   IsDisabled = true,
-               } ,
-               cancellationToken: stoppingTokenToken);
+                   var part = fullMessage.Substring(i, Math.Min(maxLength, fullMessage.Length - i));
+                   await _client.Bot.SendMessage(
+                       chatId: x.Chat.ChatIdentificationNumber,
+                       text: part,
+                       messageThreadId: x.TopicId ?? null,
+                       parseMode: Telegram.Bot.Types.Enums.ParseMode.Html,
+                       linkPreviewOptions: new LinkPreviewOptions()
+                       {
+                           IsDisabled = true,
+                       },
+                       cancellationToken: stoppingTokenToken
+                   );
+               }
+           }
+           catch (Exception e)
+           {
+               _logger.LogError(e, "Error sending message to chat {ChatId}", x.Chat.ChatIdentificationNumber);
+           }
+           
        });
         return Ok();
     }
