@@ -194,6 +194,7 @@ public class DiscordClient :BackgroundService
                 var url = match.Groups["url"].Value;
                 return $"<a href=\"{url}\">{url}</a>";
             });
+            cache.Remove("Previous");
             MessageDto newMessage = new()
             {
                 Region = region,
