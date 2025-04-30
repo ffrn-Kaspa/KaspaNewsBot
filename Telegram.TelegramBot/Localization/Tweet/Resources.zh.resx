@@ -154,4 +154,7 @@ https://forms.gle/xjZWvq5scqR8bire6</value>
   <data name="SupportContent" xml:space="preserve">
     <value>你好，这个机器人是由社区成员编写和维护的。为了让这个机器人得以运行，拥有者每月还需要自掏腰包支付使用 Twitter API 的费用。如果你认为这个机器人对你有价值，欢迎向以下地址捐款：</value>
   </data>
+  <data name="ChannelLink" xml:space="preserve">
+    <value>https://t.me/kaspa_news_zh</value>
+  </data>
 </root>
