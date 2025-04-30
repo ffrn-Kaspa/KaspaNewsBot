@@ -44,7 +44,7 @@ public class TelegramClient
     protected internal async Task Setup()
     {
         Bot = new TelegramBotClient(
-            token: _settings.TestToken,
+            token: _settings.Token,
             httpClient: _client,
             cancellationToken: _tokenSource.Token);
         _me = await Bot.GetMe();
