@@ -79,9 +79,9 @@ public class NewTweetController : ControllerBase
         }
         else
         {
-            sb.Append(Languages.Tweet.SourceText);
+            sb.Append(GetString(Languages.Tweet.SourceText));
             sb.Append(" ");
-            sb.Append($"<a href=\"{request.Source}\">{Languages.Tweet.Original}</a>");
+            sb.Append($"<a href=\"{request.Source}\">{GetString(Languages.Tweet.Original)}</a>");
         }
         sb.Append("\n\n");
         sb.Append(GetString(Languages.Tweet.Join));
