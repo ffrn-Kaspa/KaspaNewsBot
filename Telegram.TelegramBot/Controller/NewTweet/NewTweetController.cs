@@ -35,14 +35,15 @@ public class NewTweetController : ControllerBase
         {
             _culture = "en";
         }
-        string header = GetString(Languages.Tweet.NewTweet);
         
-        var sb = new StringBuilder(header);
-        sb.Append($"<a href=\"{request.User}\">{request.Username}</a>");
-        sb.Append("\n");
-        sb.Append("\n");
-        sb.Append(request.Message);
+        var sb = new StringBuilder(request.Message);
+        
+        
         sb.Append("\n\n");
+        sb.Append("----------------------------------------");
+        sb.Append("\n");
+        sb.Append(GetString(Languages.Tweet.Author));
+        sb.Append($" <a href=\"{request.User}\">{request.Username}</a>");
         if (request.IsReply)
         {
             if (request.Quoted is not null)
@@ -79,7 +80,7 @@ public class NewTweetController : ControllerBase
         }
         else
         {
-            sb.Append(GetString(Languages.Tweet.SourceText));
+            sb.Append(Languages.Tweet.SourceText);
             sb.Append(" ");
             sb.Append($"<a href=\"{request.Source}\">{GetString(Languages.Tweet.Original)}</a>");
         }

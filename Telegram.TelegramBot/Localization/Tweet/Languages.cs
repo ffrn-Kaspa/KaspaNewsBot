@@ -42,6 +42,7 @@ public static class Languages
         public static string Source => "Source";
         public static string ChannelLink => "ChannelLink";
         public static string LanguageChannel => "LanguageChannel";
+        public static string Author => "Author";
     }
 }
 

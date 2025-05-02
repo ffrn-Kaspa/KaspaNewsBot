@@ -163,4 +163,7 @@ If you think this bot is valuable to you feel free to donate to the following ad
   <data name="Address" xml:space="preserve">
     <value>kaspa:qpde8kkdpwt0yvkds45g8sgt4tcl3q2j3n7quj572h5u5htfn7kxwxfx35xcy</value>
   </data>
+  <data name="Author" xml:space="preserve">
+    <value>Author:</value>
+  </data>
 </root>

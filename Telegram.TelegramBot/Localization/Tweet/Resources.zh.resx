@@ -157,4 +157,7 @@ https://forms.gle/xjZWvq5scqR8bire6</value>
   <data name="ChannelLink" xml:space="preserve">
     <value>https://t.me/kaspa_news_zh</value>
   </data>
+  <data name="Author" xml:space="preserve">
+    <value>作者</value>
+  </data>
 </root>
