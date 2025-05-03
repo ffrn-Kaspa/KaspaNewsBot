@@ -44,6 +44,7 @@ public class NewTweetController : ControllerBase
         sb.Append("\n");
         sb.Append(GetString(Languages.Tweet.Author));
         sb.Append($" <a href=\"{request.User}\">{request.Username}</a>");
+        sb.Append("\n");
         if (request.IsReply)
         {
             if (request.Quoted is not null)
@@ -80,7 +81,7 @@ public class NewTweetController : ControllerBase
         }
         else
         {
-            sb.Append(Languages.Tweet.SourceText);
+            sb.Append(GetString(Languages.Tweet.SourceText));
             sb.Append(" ");
             sb.Append($"<a href=\"{request.Source}\">{GetString(Languages.Tweet.Original)}</a>");
         }
