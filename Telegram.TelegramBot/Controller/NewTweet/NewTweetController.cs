@@ -37,10 +37,12 @@ public class NewTweetController : ControllerBase
         }
         
         var sb = new StringBuilder(request.Message);
-        
-        
-        sb.Append("\n\n");
-        sb.Append("----------------------------------------");
+
+        if (!string.IsNullOrEmpty(request.Message))
+        {
+            sb.Append("\n\n");
+            sb.Append("------------------------------------");
+        }
         sb.Append("\n");
         sb.Append(GetString(Languages.Tweet.Author));
         sb.Append($" <a href=\"{request.User}\">{request.Username}</a>");
@@ -83,7 +85,9 @@ public class NewTweetController : ControllerBase
         {
             sb.Append(GetString(Languages.Tweet.SourceText));
             sb.Append(" ");
-            sb.Append($"<a href=\"{request.Source}\">{GetString(Languages.Tweet.Original)}</a>");
+            var link = request.Source;
+            var hypertext = GetString(Languages.Tweet.Original);
+            sb.Append($"<a href=\"{link}\">{hypertext}</a>");
         }
         sb.Append("\n\n");
         sb.Append(GetString(Languages.Tweet.Join));
