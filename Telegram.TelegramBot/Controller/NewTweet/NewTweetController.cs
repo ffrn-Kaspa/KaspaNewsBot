@@ -35,7 +35,8 @@ public class NewTweetController : ControllerBase
         {
             _culture = "en";
         }
-        
+
+        string preview = "";
         var sb = new StringBuilder(request.Message);
 
         if (!string.IsNullOrEmpty(request.Message))
@@ -58,6 +59,7 @@ public class NewTweetController : ControllerBase
                 sb.Append(GetString(Languages.Tweet.SourceText));
                 sb.Append(" ");
                 sb.Append($"<a href=\"{request.Quoted}\">{GetString(Languages.Tweet.Original)}</a>");
+                preview = request.Quoted;
             }
             else if (request.Retweeted is not null)
             {
@@ -69,6 +71,8 @@ public class NewTweetController : ControllerBase
                 sb.Append(GetString(Languages.Tweet.SourceText));
                 sb.Append(" ");
                 sb.Append($"<a href=\"{request.Retweeted}\">{GetString(Languages.Tweet.Original)}</a>");
+                preview = request.Retweeted;
+
             }
             else if (request.Replying is not null)
             {
@@ -79,6 +83,8 @@ public class NewTweetController : ControllerBase
                 sb.Append(GetString(Languages.Tweet.SourceText));
                 sb.Append(" ");
                 sb.Append($"<a href=\"{request.Replying}\">{GetString(Languages.Tweet.Original)}</a>");
+                preview = request.Replying;
+
             }
         }
         else
@@ -88,6 +94,7 @@ public class NewTweetController : ControllerBase
             var link = request.Source;
             var hypertext = GetString(Languages.Tweet.Original);
             sb.Append($"<a href=\"{link}\">{hypertext}</a>");
+            preview = link;
         }
         sb.Append("\n\n");
         sb.Append(GetString(Languages.Tweet.Join));
@@ -119,7 +126,8 @@ public class NewTweetController : ControllerBase
                        parseMode: Telegram.Bot.Types.Enums.ParseMode.Html,
                        linkPreviewOptions: new LinkPreviewOptions()
                        {
-                           IsDisabled = true,
+                           Url = preview,
+                           IsDisabled = false,
                        },
                        cancellationToken: stoppingTokenToken
                    );
