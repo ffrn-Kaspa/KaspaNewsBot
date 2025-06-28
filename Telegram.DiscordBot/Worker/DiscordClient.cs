@@ -1,7 +1,11 @@
+using System.Net.Http.Json;
 using System.Text.RegularExpressions;
 using Discord;
 using Discord.WebSocket;
 using Microsoft.Extensions.Caching.Memory;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Telegram.Db.Enums;
 using Telegram.DiscordBot.Model;

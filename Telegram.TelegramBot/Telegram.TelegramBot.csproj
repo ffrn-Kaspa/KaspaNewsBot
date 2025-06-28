@@ -17,6 +17,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\Telegram.Db\Telegram.Db.csproj" />
+      <ProjectReference Include="..\Telegram.DiscordBot\Telegram.DiscordBot.csproj" />
     </ItemGroup>
 
     <ItemGroup>

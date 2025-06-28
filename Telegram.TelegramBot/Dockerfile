@@ -9,6 +9,7 @@ ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 COPY ["Telegram.TelegramBot/Telegram.TelegramBot.csproj", "Telegram.TelegramBot/"]
 COPY ["Telegram.Db/Telegram.Db.csproj", "Telegram.Db/"]
+COPY ["Telegram.DiscordBot/Telegram.DiscordBot.csproj", "Telegram.DiscordBot/"]
 RUN dotnet restore "Telegram.TelegramBot/Telegram.TelegramBot.csproj"
 COPY . .
 WORKDIR "/src/Telegram.TelegramBot"
